@@ -29,3 +29,6 @@ ID: ID column
 
 The Train Dataset includes the SUBCLASS column, which is the target variable.
 The Test Dataset does not include the SUBCLASS column, meaning it's likely used for prediction.
+
+### Data google drive
+https://drive.google.com/drive/folders/17Q0YhLZOG1hPiFfEEtpJKsBteEUVZtOQ?usp=drive_link
