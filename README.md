@@ -2,33 +2,22 @@
 Application and Practice in Neural Networks
 
 ## Title
-Developing cancer classification models using genomic variant information fromcancer patients
+Evaluate the quality of AI responses
 
 ## Introduction
-To expand the field of artificial intelligence, we aim to develop AI algorithms that can efficiently analyze and interpret various complex bio-data by processing and analyzing them, to increase the utilization of bio-data, and to explore how AI technology can contribute to solving real-world problems through classification in complex bio-data.
+With the recent development of large language models, the AI's response will change according to the user's prompt, and the evaluation of the AI's task performance will be based on how well it fits the user's preferences rather than quantitative evaluation.
+To evaluate how well the AI is performing according to the user's preferences, we want to create a model to evaluate the quality of the chatbot by rating the user's preferences as 0 and 1 after the chatbot and the user interact.
+Therefore, the purpose of this project is to present a clear response evaluation metric and to quantitatively evaluate and improve AI response quality based on it.
 
 ## Description of the Dataset
-### 1. Train Dataset
-Number of Entries (Rows): 6201 rows
-Number of Features (Columns): 4386 columns (from ID to ZYX)
-Data Types: All columns are of object data type (4386 object type columns)
-Memory Usage: Approximately 207.5 MB
-Feature List:
-ID: ID column
-SUBCLASS: Likely the target variable
-4384 other features (e.g., A2M, AAAS, AADAT, AARS1, etc.)
-  
-### 2. Test Dataset
-Number of Entries (Rows): 2546 rows
-Number of Features (Columns): 4385 columns (from ID to ZYX, without SUBCLASS)
-Data Types: All columns are of object data type (4385 object type columns)
-Memory Usage: Approximately 85.2 MB
-Feature List:
-ID: ID column
-4384 other features (e.g., A2M, AAAS, AADAT, AARS1, etc.)
+### Distribution of classes in the training dataset
+#### Conversation topics
+Beauty, Health, Food & Beverage / Travel, Leisure, Hobbies / Home, Life, Relationships / Economic Activities, Products, Commerce / Entertainment / Recreation, Arts / Humanities / Technology, Natural Sciences
+#### Total number of conversations
+1,001,428
+#### Syntactic accuracy evaluation
+Structural accuracy, Formal accuracy, Topic classification adequacy, Conversation summary adequacy
 
-The Train Dataset includes the SUBCLASS column, which is the target variable.
-The Test Dataset does not include the SUBCLASS column, meaning it's likely used for prediction.
-
-### Data google drive
+### Train, test Dataset in google drive
+(The validation dataset is created by splitting the train data 9:1.)
 https://drive.google.com/drive/folders/17Q0YhLZOG1hPiFfEEtpJKsBteEUVZtOQ?usp=drive_link
