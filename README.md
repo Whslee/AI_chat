@@ -1,25 +1,27 @@
-# AI_chat
+# Korean food classification
 Application and Practice in Neural Networks
 
 ## Title
-Evaluate the quality of AI responses
+Classifying different types of kimchi in Korea with FastAI
 
 ## Introduction
-With the recent development of large language models, the AI's response will change according to the user's prompt, and the evaluation of the AI's task performance will be based on how well it fits the user's preferences rather than quantitative evaluation.
+While eating, I suddenly realized that I seem to enjoy eating kimchi so much that my table is never without it.
 
-To evaluate how well the AI is performing according to the user's preferences, we want to create a model to evaluate the quality of the chatbot by rating the user's preferences as 0 and 1 after the chatbot and the user interact.
+There are many different types of kimchi, but I usually eat 'cabbage kimchi' and 'cucumber sobakki', so if there are other kimchi side dishes, would I be able to distinguish them? I thought it would be fun to create a classification model that can tell you what kind of kimchi you are eating when you take a picture of it, so I decided to do this as a class project.
 
-Therefore, the purpose of this project is to present a clear response evaluation metric and to quantitatively evaluate and improve AI response quality based on it.
+This project is not just about classifying kimchi, but it is a familiar task because it can be used universally if it is trained with various data based on the vision classification model I designed.
 
 ## Description of the Dataset
 ### Distribution of classes in the training dataset
-#### Conversation topics
-Beauty, Health, Food & Beverage / Travel, Leisure, Hobbies / Home, Life, Relationships / Economic Activities, Products, Commerce / Entertainment / Recreation, Arts / Humanities / Technology, Natural Sciences
-#### Total number of conversations
-1,001,428
-#### Syntactic accuracy evaluation
-Structural accuracy, Formal accuracy, Topic classification adequacy, Conversation summary adequacy
+#### Data Class
+Green onion kimchi/ White Kimchi/ Young radish kimchi/ Kkakdugi/ Raw radish vegetables 
+5 classes
+#### Total number of data
+1000 images of each class / 5000 images in total
+
+#### Accuracy evaluation
+Precision, Recall, F1-score, Accuracy, Macro average
 
 ### Train, test Dataset in google drive
-(The validation dataset is created by splitting the train data 9:1.)
-https://drive.google.com/drive/folders/17Q0YhLZOG1hPiFfEEtpJKsBteEUVZtOQ?usp=drive_link
+When training the model, the training and validation datasets are divided
+[https://drive.google.com/drive/folders/17Q0YhLZOG1hPiFfEEtpJKsBteEUVZtOQ?usp=drive_link](https://drive.google.com/drive/folders/1J76rZXpz5TPoSKudB82eC9gA5iN0XWqt?usp=sharing)
