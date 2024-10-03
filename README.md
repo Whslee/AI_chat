@@ -24,4 +24,5 @@ Precision, Recall, F1-score, Accuracy, Macro average
 
 ### Train, test Dataset in google drive
 When training the model, the training and validation datasets are divided
+training data size 0.8/ validation data size 0.2
 [https://drive.google.com/drive/folders/17Q0YhLZOG1hPiFfEEtpJKsBteEUVZtOQ?usp=drive_link](https://drive.google.com/drive/folders/1J76rZXpz5TPoSKudB82eC9gA5iN0XWqt?usp=sharing)
